@@ -17,6 +17,8 @@ public class MyChatApplication extends Application{
 
     public MyChatApplication() {
         this.bus = new Bus();
+        // Friebase.setAndroidContext(this);
+        org.xuxiaoxiao.mychat.live.Module.Register(this);
     }
 
     @Override
